@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon class='slds-var-m-right_small' icon-name="standard:account" size="small"></lightning-icon>
+            <lightning-icon class='slds-var-m-right_small' icon-name="standard:opportunity" size="small"></lightning-icon>
+            <p class='slds-var-m-top_small slds-text-heading_large'>Account x Opportunity</p>
+        </h3>
+        <div class='footer slds-var-m-top_large' slot="footer">
+                <lightning-formatted-url class='slds-var-m-right_small' value='http://linkedin.com/in/singh614' target='_blank' label="LinkedIn"></lightning-formatted-url>
+                <lightning-formatted-url class='slds-var-m-left_small' value='http://github.com/singh614' target='_blank' label="GitHub"></lightning-formatted-url>
+        </div>
+        <div class='slds-var-m-around_small'>
+            <lightning-datatable
+                key-field="Id"
+                data={data}
+                columns={columns}>
+            </lightning-datatable>
+
+            <div class="slds-align_absolute-center slds-var-m-top_medium">
+                <lightning-button label="Previous" onclick={handlePrevious} disabled={isPreviousDisabled}></lightning-button>
+                <span class="slds-var-m-horizontal_medium">Page {currentPage} of {totalPages}</span>
+                <lightning-button label="Next" onclick={handleNext} disabled={isNextDisabled}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
