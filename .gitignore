@@ -1,0 +1,45 @@
+.gitignore file
+
+# VS Code Settings
+.vscode/
+.settings/
+# SFDX Local Data
+.sfdx/
+coverage/
+# Node Modules and LWC Build Output
+node_modules/
+lwc/jsconfig.json
+# Test and Scratch Files
+*.log
+*.test.js
+__tests__/
+__mockdata__/
+force-app/test/
+# Git and OS Specific
+.DS_Store
+Thumbs.db
+# Build or Static Resource Artifacts
+*.zip
+*.jar
+*.tar.gz
+*.rar
+*.exe
+# Env/Secrets (if used)
+.env
+.env.*
+# Salesforce & Git Tools
+.sf/
+.husky/
+# Common Tooling & Caches
+.npm/
+.yarn/
+.pnp.*
+.prettier/
+.eslintcache
+.cache/
+dist/
+build/
+tmp/
+temp/
+# Config & Tool Files
+jest.config.js
